@@ -4,7 +4,7 @@ import com.ikhsan.mypets.R
 import com.ikhsan.mypets.dataModel.Bio
 
 object MyBiodata {
-    private  var myProfilePhoto : Int = R.drawable.ikhsan
+    private  var myProfilePhoto : Int = R.drawable.t_ikhsan
     private var myName : String = "Ikhsan Satriadi"
     private var myEmail : String = "ikhsansatriadi175@gmail.com"
     private var myOccupation : String = "Pelajar/Siswa"

@@ -4,6 +4,14 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        debug {
+            storeFile file('D:\\ngoding\\keystore\\ikhsan.jks')
+            storePassword 'ikhsan13579'
+            keyAlias 'ikhkey'
+            keyPassword 'ikhsan13579'
+        }
+    }
     compileSdk 32
 
     defaultConfig {
