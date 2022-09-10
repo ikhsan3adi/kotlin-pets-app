@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AboutMeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_photo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/about_name"
+            style="@style/TextAbout.Name"
+            android:layout_width="wrap_content"
+            tools:text="@string/my_name"/>
+
+        <TextView
+            android:id="@+id/about_email"
+            style="@style/TextAbout"
+            android:layout_width="wrap_content"
+            tools:text="@string/my_email"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextDetail.Subtitle"
+            android:text="@string/occupation"/>
+
+        <TextView
+            android:id="@+id/about_occupation"
+            style="@style/TextDetail.BodyText"
+            android:text="@string/about_occupation" />
+
+        <TextView
+            style="@style/TextDetail.Subtitle"
+            android:text="@string/age"/>
+
+        <TextView
+            android:id="@+id/about_age"
+            style="@style/TextDetail.BodyText"
+            android:text="@string/about_age" />
+        <TextView
+            style="@style/TextDetail.Subtitle"
+            android:text="@string/hobby"/>
+
+        <TextView
+            android:id="@+id/about_hobby"
+            style="@style/TextDetail.BodyText"
+            android:text="@string/about_hobby" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PetDetailsActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            >
+
+            <ImageView
+                android:id="@+id/img_pet_photo"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="4dp"
+                android:scaleType="centerCrop"
+                tools:src="@tools:sample/avatars"
+                android:contentDescription="@string/pet_images" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                >
+
+                <TextView
+                    android:id="@+id/pet_name"
+                    style="@style/TextDetail.Title"
+                    android:layout_width="wrap_content"
+                    android:text="@string/title_detail"
+                    android:layout_gravity="start"
+                    android:textColor="@color/white"
+                    android:shadowColor="@color/black"
+                    android:shadowRadius="4"/>
+
+<!--                <TextView-->
+<!--                    style="@style/TextDetail.Share"-->
+<!--                    android:clickable="true"-->
+<!--                    android:focusable="true"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_gravity="end"-->
+<!--                    android:layout_marginTop="16dp"-->
+<!--                    android:layout_marginEnd="16dp"-->
+<!--                    android:drawablePadding="4dp"-->
+<!--                    android:padding="8dp"-->
+<!--                    android:text="@string/share_btn"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    app:drawableStartCompat="@drawable/ic_baseline_share_24" />-->
+
+            </FrameLayout>
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/detailContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextDetail.Subtitle"
+                android:text="@string/karakteristik_detail"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/pet_character"
+                style="@style/TextDetail.BodyText"
+                android:text="@string/lorem" />
+
+            <TextView
+                style="@style/TextDetail.Subtitle"
+                android:text="@string/deskripsi_detail"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/pet_description"
+                style="@style/TextDetail.BodyText"
+                android:text="@string/lorem" />
+
+            <TextView
+                style="@style/TextDetail.Subtitle"
+                android:text="@string/abilities_kemampuan"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextDetail.Subtitle"
+                        android:textColor="@color/subtext"
+                        android:layout_width="wrap_content"
+                        android:text="@string/can_walk"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/pet_can_walk"
+                        style="@style/TextDetail.Subtitle.YesNo"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/yes"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextDetail.Subtitle"
+                        android:textColor="@color/subtext"
+                        android:layout_width="wrap_content"
+                        android:text="@string/can_swim"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/pet_can_swim"
+                        style="@style/TextDetail.Subtitle.YesNo"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/yes" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextDetail.Subtitle"
+                        android:textColor="@color/subtext"
+                        android:layout_width="wrap_content"
+                        android:text="@string/can_fly"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/pet_can_fly"
+                        style="@style/TextDetail.Subtitle.YesNo"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/yes" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            >
+
+            <Button
+                android:id="@+id/pet_sound_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="?attr/colorSecondaryVariant"
+                android:text="@string/click_me"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

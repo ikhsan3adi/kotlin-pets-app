@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MyPets</string>
+    <string name="pets_name">MyPet</string>
+    <string name="detail">lorem ipsum</string>
+    <string name="about_me">About me</string>
+    <string name="click_me">Click me!</string>
+    <string name="my_name">My_name</string>
+    <string name="my_email">my_email</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="share_btn">Share</string>
+    <string name="title_detail">Ini Judul</string>
+    <string name="karakteristik_detail">Karakteristik</string>
+    <string name="lorem">Lorem ipsum dolor sit amet laskdhfknvahklnjnvkajv mnajskvmandvnjasdakln ajksdn kajdn kljnd akjshfjk ehao j asdofhjasdklfhjoawei osaiefjlka ja osih ds</string>
+    <string name="deskripsi_detail">Deskripsi</string>
+    <string name="pet_images">Pet images</string>
+    <string name="can_walk">Can Walk</string>
+    <string name="can_swim">Can Swim</string>
+    <string name="can_fly">Can Fly</string>
+    <string name="yes">Yes</string>
+    <string name="abilities_kemampuan">Abilities/Kemampuan</string>
+    <string name="age">Umur</string>
+    <string name="occupation">Pekerjaan</string>
+    <string name="hobby">Hobi</string>
+    <string name="about_occupation">about_occupation</string>
+    <string name="about_age">about_age</string>
+    <string name="about_hobby">about_hobby</string>
+</resources>
